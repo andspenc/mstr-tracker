@@ -16,6 +16,20 @@ if (randomNumber1 < randomNumber2){
 }
 
 
+var request = require('request');
+var requestOptions = {
+    'url': 'https://api.tiingo.com/tiingo/daily/aapl/prices?startDate=2019-01-02&token=Not logged-in or registered. Please login or register to see your API Token',
+    'headers': {
+        'Content-Type': 'application/json'
+        }
+};
+
+request(requestOptions,
+    function(error, response, body) {
+        console.log(body);
+    }
+);        
+    
 
    
 
