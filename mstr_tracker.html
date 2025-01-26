@@ -15,14 +15,23 @@
 
       <div class="dice">
         <p>mNav</p>
-        <img class="img1" src="./images/dice6.png" />
+        <img class="img1" src="./Snapshot-1.png" />
       </div>
 
       <div class="dice">
         <p>Stock Price</p>
-        <img class="img2" src="./images/dice6.png" />
+        <img class="img2" src="./Snapshot2.png" />
       </div>
     </div>
+
+      <!-- mstrDataUrl="https://api.tiingo.com/tiingo/daily/mstr/prices?token=6878e224b55b90537048cebf520793dc186219dc&startDate=2024-11-25" -->
+
+      <div class="container">
+        <h1>MicroStrategy (MSTR) Stock Price - Last Year</h1>
+        <canvas id="stockChart"></canvas>
+    </div>
+    <script src="index.js"></script>
+    
 
     <div>
       <canvas id="myChart"></canvas>
@@ -39,7 +48,7 @@
           labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'],
           datasets: [{
             label: '# of Votes',
-            data: [12, 19, 3, 5, 2, 3],
+            data: [10,15,10,2,5,5],
             borderWidth: 1
           }]
         },
