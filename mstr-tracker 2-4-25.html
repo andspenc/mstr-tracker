@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MSTR Stock & NAV Charts</title>
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <style>
+        body { font-family: Arial, sans-serif; text-align: center; }
+        .chart-container { display: flex; flex-direction: column; align-items: center; gap: 30px; }
+        svg { background-color: #f9f9f9; }
+    </style>
+</head>
+<body>
+    <h1>MicroStrategy (MSTR) Stock & Net Asset Value</h1>
+
+    <div class="chart-container">
+        <!-- Chart 1: MSTR Price -->
+        <div>
+            <h2>MSTR Stock Price Over Time</h2>
+            <svg id="chart-price" width="800" height="400"></svg>
+        </div>
+
+        <!-- Chart 2: MSTR Price vs NAV -->
+        <div>
+            <h2>MSTR Price vs. NAV Per Share</h2>
+            <svg id="chart-nav" width="800" height="400"></svg>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
