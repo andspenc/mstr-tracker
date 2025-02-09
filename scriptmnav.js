@@ -3,7 +3,7 @@ const BTC_HOLDINGS = 190000;  // MSTR's Bitcoin holdings
 const SHARES_OUTSTANDING = 15700000; // MSTR's shares outstanding
 
 // Yahoo Finance API endpoints
-const btcUrl = "https://query1.finance.yahoo.com/v8/finance/chart/BTC-USD?range=1mo&interval=1d";
+const btcUrl = "https://query1.finance.yahoo.com/v8/finance/chart/BTC-USD?chartPreviousClose";
 const mstrUrl = "https://query1.finance.yahoo.com/v8/finance/chart/MSTR?range=1mo&interval=1d";
 
 // Fetch BTC and MSTR data
