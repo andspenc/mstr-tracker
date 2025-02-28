@@ -10,16 +10,23 @@
         .chart-container { display: flex; flex-direction: column; align-items: center; gap: 30px; }
         svg { background-color: #f9f9f9; }
     </style>
+    <link rel="stylesheet" href="./styles.css">
 </head>
 <body>
     <h1>MicroStrategy (MSTR) Stock & Net Asset Value</h1>
+
+    
+    <div class="containers">
+        <a href="products/BTI.html">
+            <img src="Saylor.jpg" alt="Saylor">
+        </a>
 
     <div class="chart-container">
         <!-- Chart 1: MSTR Price -->
         <div>
             <h2>MSTR Stock Price Over Time</h2>
             <svg id="chart-price" width="800" height="400"></svg>
-            <script src="scriptmnav.js"></script>
+            
         </div>
 
 
@@ -27,10 +34,10 @@
         <div>
             <h2>MSTR Price vs. NAV Per Share</h2>
             <svg id="chart-nav" width="800" height="400"></svg>
-            <script src="scriptmnav.js"></script>
+            
         </div>
     </div>
-
+<script src="script.js"></script>
     
 </body>
 </html>
